@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Siddharth Patel" />
+    <meta name="description" content="Hidden Objects Game - v1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/x-icon" href="./favicon/favicon.ico" />
+
+    <!-- link GSAP library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- link JavaScript -->
+    <script defer src="./js/script.js"></script>
+
+    <title>Hidden Objects Game - v3</title>
+  </head>
+
+  <body>
+    <main>
+      <!-- menu -->
+      <section class="titleTag" id="titleTag">
+        <object data="./images/title/title.svg" type="image/svg+xml" class="title" id="title0"></object>
+      </section>
+
+      <section class="sect">
+        <object data="./images/puzzle1/puzzle1.svg" type="image/svg+xml" class="puzzleStyle" id="obj0"></object>
+        <object data="./images/puzzle2/puzzle2.svg" type="image/svg+xml" class="puzzleStyle" id="obj1"></object>
+        <object data="./images/puzzle3/puzzle3.svg" type="image/svg+xml" class="puzzleStyle" id="obj2"></object>
+        <object data="./images/puzzle4/puzzle4.svg" type="image/svg+xml" class="puzzleStyle" id="obj3"></object>
+      </section>
+      <!-- scene 1 -->
+      <section class="sect1">
+        <object data="./images/puzzle1/puzzle1.svg" type="image/svg+xml" id="scene1"></object>
+      </section>
+      <!-- scene 2 -->
+      <section class="sect2">
+        <object data="./images/puzzle2/puzzle2.svg" type="image/svg+xml" id="scene2"></object>
+      </section>
+      <!-- scene 3 -->
+      <section class="sect3">
+        <object data="./images/puzzle3/puzzle3.svg" type="image/svg+xml" id="scene3"></object>
+      </section>
+      <!-- scene 3 -->
+      <section class="sect4">
+        <object data="./images/puzzle4/puzzle4.svg" type="image/svg+xml" id="scene4"></object>
+      </section>
+      <!-- board -->
+      <section class="board">
+
+        <div class="boardLeft">
+          <img src="./images/box.svg" alt="Hidden Object 1" class="boardStyle" id="item0">
+          <img src="./images/box.svg" alt="Hidden Object 2" class="boardStyle" id="item1">
+          <img src="./images/box.svg" alt="Hidden Object 3" class="boardStyle" id="item2">
+          <img src="./images/box.svg" alt="Hidden Object 4" class="boardStyle" id="item3">
+          <img src="./images/box.svg" alt="Hidden Object 5" class="boardStyle" id="item4">
+        </div>
+        
+        <div class="boardRight">
+          <div class="buttons" id="btn0">Shuffle</div>
+          <div class="buttons" id="btn1">Home</div>
+        </div>
+      </section>
+
+      <!-- score -->
+      <section class="scoreStyle">
+        <div id="score">0</div>
+      </section>
+    </main>
+  </body>
+
+</html>

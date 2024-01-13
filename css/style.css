@@ -1,0 +1,264 @@
+@charset "UTF-8";
+
+html,
+body * {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+
+.sect1,
+.sect2,
+.sect3,
+.sect4,
+.board,
+.scoreStyle
+{
+    visibility: hidden;
+    overflow: hidden;
+    width: 85%;
+    margin: 10px 100px;
+    position: fixed;
+    top: 0;
+}
+
+.sect {
+    display: flex;
+    flex-wrap: row;
+    flex-wrap: wrap;
+    
+}
+
+.puzzleStyle {
+    max-width: 40%;
+    margin: 20px auto;
+    border-radius: 120px;
+    
+}
+
+.puzzleStyle:hover {
+    scale: 1.05;
+    transition: all 1s;
+}
+
+.sect {
+    background-image: url(/root/images/bg/bg.svg);
+    background-size: cover;
+}
+
+
+.board {
+    display: flex;
+    flex-direction: row;
+    top:660px;
+    margin: -10px 40px;
+    height: 200px;
+}
+
+.boardLeft {
+    height: 160px;
+    margin: 0px auto 0px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.boardRight {
+    display: flex;
+    flex-direction: column;
+}
+
+.board img{
+    width: 120px;
+    margin: 20px 50px;
+    background-color: aliceblue;
+    padding: 20px;
+    border: 2px solid red;
+}
+
+.board img:hover {
+    scale:1.1;
+    transition: 1s all;
+}
+
+#score  {
+    color: brown;
+    font-size: 30px;
+    margin: auto;
+
+}
+
+.scoreStyle {
+    position: absolute;
+    top:20px;
+    left:20px;
+    background-color: rgba(255, 255, 255, 0.334);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    border-radius: 80px;
+    border: 2px solid brown;
+    position: fixed;
+}
+
+#btn0 {
+    padding: 10px 20px;
+    background-color: rgb(242, 242, 242);
+    border: 2px solid brown;
+    border-radius: 20px;
+    cursor:pointer;
+    margin: 40px auto 0px auto;
+}
+
+#btn1 {
+    padding: 10px 20px;
+    background-color: rgb(242, 242, 242);
+    border: 2px solid brown;
+    border-radius: 20px;
+    cursor:pointer;
+    margin: 20px auto 0px auto; 
+}
+
+
+#btn0:hover {
+    background-color: brown;
+    border: 2px solid rgb(0, 0, 0);
+    cursor:pointer;
+}
+
+#btn1:hover {
+    background-color: brown;
+    border: 2px solid rgb(0, 0, 0);
+    cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+.sect1,
+.sect2,
+.sect3,
+.sect4,
+.board,
+.scoreStyle
+{
+    visibility: hidden;
+    overflow: hidden;
+    width: 85%;
+    margin: 10px 100px;
+    position: fixed;
+    top: 0;
+}
+
+.sect {
+    display: flex;
+    flex-wrap: row;
+    flex-wrap: wrap;
+}
+
+.puzzleStyle {
+    max-width: 40%;
+    margin: 20px auto;
+}
+
+.puzzleStyle:hover {
+    scale: 1.05;
+    transition: all 1s;
+}
+
+.board {
+    display: flex;
+    flex-direction: row;
+    top:660px;
+    margin: -10px 40px;
+    height: 200px;
+}
+
+.boardLeft {
+    height: 160px;
+    margin: 0px auto 0px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.boardRight {
+    display: flex;
+    flex-direction: column;
+}
+
+.board img{
+    width: 120px;
+    margin: 20px 50px;
+    background-color: aliceblue;
+    padding: 20px;
+    border: 2px solid red;
+}
+
+#score  {
+    color: brown;
+    font-size: 30px;
+    margin: auto;
+}
+
+.scoreStyle {
+    position: absolute;
+    top:20px;
+    left:20px;
+    background-color: rgba(255, 255, 255, 0.334);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    border-radius: 80px;
+    border: 2px solid brown;
+}
+
+#btn0 {
+    padding: 10px 20px;
+    background-color: rgb(242, 242, 242);
+    border: 2px solid brown;
+    border-radius: 20px;
+    cursor:pointer;
+    margin: 40px auto 0px auto;
+}
+
+#btn1 {
+    padding: 10px 20px;
+    background-color: rgb(242, 242, 242);
+    border: 2px solid brown;
+    border-radius: 20px;
+    cursor:pointer;
+    margin: 20px auto 0px auto; 
+}
+
+
+#btn0:hover {
+    background-color: brown;
+    border: 2px solid rgb(0, 0, 0);
+    cursor:pointer;
+}
+
+#btn1:hover {
+    background-color: brown;
+    border: 2px solid rgb(0, 0, 0);
+    cursor:pointer;
+}
+
+}
